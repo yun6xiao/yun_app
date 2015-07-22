@@ -31,5 +31,9 @@ public final class Locale implements Cloneable, Serializable {
 	// ....
 	public static void main(String[] args) {
 		System.out.println("xx+++");
+		System.out.println(1);
+		System.out.println(2);
+		System.out.println(3);
+		System.out.println(4);
 	}
 }

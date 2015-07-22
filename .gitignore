@@ -3,3 +3,4 @@
 .project
 test/bin/.gitignore
 /test/.settings/org.eclipse.jdt.core.prefs
+archive.zip
