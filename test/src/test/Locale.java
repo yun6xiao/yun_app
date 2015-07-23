@@ -29,11 +29,12 @@ public final class Locale implements Cloneable, Serializable {
 	return locale;
     }
 	// ....
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		System.out.println("xx+++");
 		System.out.println(1);
 		System.out.println(2);
 		System.out.println(3);
 		System.out.println(4);
+		new ChanjetTest().name="xiaohong";
 	}
 }
