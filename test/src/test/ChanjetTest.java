@@ -1,6 +1,8 @@
 package test;
 
 import java.util.HashMap;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 public class ChanjetTest {
 	public String name;//public修饰字段可以直接赋值
@@ -26,9 +28,20 @@ public class ChanjetTest {
 	}
 
 	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
 		// TODO Auto-generated method stub
 			System.out.println(11);
-			HashMap map=new HashMap();
+			HashMap map=new HashMap(5000);
+			for (int i = 0; i < 100000; i++) {
+				map.put("key"+i, "v"+i);
+			}
+			System.out.println(map.size());
+			System.out.println(System.currentTimeMillis()-start);
+			ConcurrentMap cMap=new ConcurrentHashMap();
+//			cMap.put(null, null);
+//			cMap.put(null, "yyy");
+//			cMap.put("xxx", null);
+			System.out.println(cMap.toString());
 	}
 
 }
