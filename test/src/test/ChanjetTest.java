@@ -41,6 +41,14 @@ public class ChanjetTest {
 //			cMap.put(null, null);
 //			cMap.put(null, "yyy");
 //			cMap.put("xxx", null);
+			ThreadLocal<HashMap<String, Object>> tLocal=new ThreadLocal<HashMap<String,Object>>();
+			tLocal.get().put("xxx", 1111);
+			tLocal.get().get("xxx");
+			
+			System.out.println(cMap.toString());
+			System.out.println(cMap.toString());
+			System.out.println(cMap.toString());
+			System.out.println(cMap.toString());
 			System.out.println(cMap.toString());
 	}
 
